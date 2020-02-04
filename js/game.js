@@ -2,7 +2,7 @@
 
 var game = {
     music: "98_Lost_Mine.mp3",
-    background_image: "Little_Mac.jpg",
+    background_image: "macFight.png",
     levels: {
 
         start: {
