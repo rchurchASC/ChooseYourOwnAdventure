@@ -2,7 +2,7 @@
 
 var game = {
     music: "98_Lost_Mine.mp3",
-    background_image: "intro-bg.jpg",
+    background_image: "Little_Mac.jpg",
     levels: {
 
         start: {
@@ -21,7 +21,7 @@ var game = {
         },
 
         trash: {
-            background_image: "fire.gif",
+            background_image: "lose.png",
             music: "Final-Fantasy-7-Boss-Battle.mp3",
             message: "You lost to Glass Joe. You are an embarrassment to boxing. You are absolute garage to the point where you are not allowed to box anymore. YOU SUCK!",
             choices: [
@@ -33,6 +33,7 @@ var game = {
         },
 
         fightTwo: {
+            background_image: "sp.jpg",
             message: "You have defeated your first opponent. What will you do for your next fight?",
             choices: [
                 {
@@ -46,7 +47,48 @@ var game = {
             ]
         },
         retire1: {
-            message: "You retire after defeating Glass Joe saying you suffered brain damage. You are not absolute garbage but you are still bad especially since you got brain damage from Glass Joe. Maybe you were destined for retirement."
+            background_image: "lose.png",
+            message: "You retire after defeating Glass Joe saying you suffered brain damage. You are not absolute garbage but you are still bad especially since you got brain damage from Glass Joe. Maybe you were destined for retirement.",
+            choices: [
+                {
+                    text: "Start Over",
+                    nextLevel: "start"
+                }
+            ]
         },
+        finalFight: {
+            background_image: "download.jpeg",
+            message: "This is it. Your final battle to win the championship. Are you ready?",
+            choices: [
+                {
+                    text: "YES!",
+                    nextLevel: "goodTry"
+                },
+                {
+                    text: "Nah B!",
+                    nextLevel: "smartMan"
+                }
+            ]
+        },
+        goodTry: {
+            background_image: "sleep.png",
+            message: "Well you had to fight Mike Tyson and ten seconds into the first round you were fast asleep. You've been forced to retire but it's ok. You survived longer than the last guy and he just walked out of the ring.",
+            choices: [
+                {
+                    text: "Play Again",
+                    nextLevel: "start"
+                }
+            ]
+        },
+        smartMan: {
+            background_image: "MAC.png",
+            message: "YOU ARE A VERY SMART MAN! You did your research and learned that you had to fight Mike Tyson and you ain't payed enough for that. So you retire early with a good career and avoid severe brain damage.",
+            choices: [
+                {
+                    text: "Play Again",
+                    nextLevel: "start"
+                }
+            ]
+        }
     }
 };
